@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Federal Reserve Economic Data + D3.js</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Federal Reserve Economic Data + D3.js</h1>
+      <h2>How tags relate to each other</h2>
+      Querying for the top 25 tags in FRED, we use the <a href="http://api.stlouisfed.org/docs/fred/related_tags.html">related_tags</a> api to connect these tags together.
+      <div id="graph"></div>
+      <h2>Data series tags</h2>
+      Size of the bubble corresponds to the number of data series that are tagged with that tag name.
+      <div id="bubble"></div>
+      <em>Code available on <a href="https://github.com/anwell/fred-d3">GitHub</a></em>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="bubble.js"></script>
+    <script src="graph.js"></script>
+  </body>
+</html>
